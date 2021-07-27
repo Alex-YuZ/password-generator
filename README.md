@@ -9,9 +9,10 @@ Two ways to play with:
      - numbers: 0 - 9
      - symbols: !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
 
-Default mode will generate 6-digit password using elements listed above.
+    ___Notice:___ Default mode will generate 6-digit password using elements listed above.
 
 2. Customized mode: it allows users to type in any characters and length of password they'd like to.
+
 
 ## How to Run
 This program can be executed directly in the terminal as follows:
@@ -25,4 +26,4 @@ python main.py
 ```
 python main.py --elements abcdeABCDE12345 --length 10
 ```
-
+___Notice:___ either `--elements` and `--length` is a must.

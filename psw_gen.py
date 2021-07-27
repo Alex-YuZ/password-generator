@@ -1,5 +1,5 @@
 import string
-import random
+import numpy as np
 
 class Password():
     
@@ -25,17 +25,17 @@ class Password():
             lower = string.ascii_lowercase
             upper = string.ascii_uppercase
             nums = "".join(list(map(str, range(10))))
-            symbles = "[]{}()*;/,_-@"
+            symbols = "".join(list("""!"\#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""))
 
             # join all memembers above together
-            self.cmb = lower + upper + nums + symbles
+            self.cmb = lower + upper + nums + symbols
             
         else:
             self.cmb = elements
 
         if length is None:
             # length of the password
-            self.length = 16
+            self.length = 6
    
         else:
             self.length = length
@@ -43,7 +43,7 @@ class Password():
     def generate(self):
         """generate the password"""
         
-        self.psw = "".join(random.sample(self.cmb, self.length))
+        self.psw = "".join(np.random.choice(list(self.cmb), self.length))
         print(self.psw)
         # return self.psw
     
