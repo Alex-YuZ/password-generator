@@ -12,4 +12,11 @@ symbles = "[]{}()*;/,_-@"
 # join all memembers above together
 cmb = lower + upper + nums + symbles
 
+# length of the password
+length = 16
+
+# generate random password
+psw = "".join(random.sample(cmb, length))
+
+print(psw)
 
