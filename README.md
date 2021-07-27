@@ -8,3 +8,21 @@ Two ways to play with:
      - lowercase letters: a - z
      - numbers: 0 - 9
      - symbols: !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+
+Default mode will generate 6-digit password using elements listed above.
+
+2. Customized mode: it allows users to type in any characters and length of password they'd like to.
+
+## How to Run
+This program can be executed directly in the terminal as follows:
+
+1. In default mode (as mentioned above), just type in as below:
+```
+python main.py
+```
+
+2. In customized mode, just type in as below:
+```
+python main.py --elements abcdeABCDE12345 --length 10
+```
+
